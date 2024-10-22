@@ -4,7 +4,7 @@ import { designCn, severityCn, sizeCn } from "./classes"
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   design?: "rounded" | "default"
-  severity?: "primary" | "yellow" | "bordered" | "white" | "cyan"
+  severity?: "primary" | "yellow" | "bordered" | "white" | "cyan" | "grey"
   size?: "small" | "default"
 }
 

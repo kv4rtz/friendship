@@ -8,10 +8,12 @@ export const severityCn = {
   yellow: "bg-yellow text-white",
   bordered: "border border-black bg-white text-black",
   white: "bg-white text-black",
+  grey: "bg-[#dedede] text-black",
   cyan: "bg-cyan text-white",
 }
 
 export const sizeCn = {
   small: "text-[16px] py-[13px] px-[30px] rounded-[12px]",
-  default: "text-[24px] min-w-[350px] py-[24px] px-[35px] rounded-[25px]",
+  default:
+    "text-[24px] min-[410px]:min-w-[350px] py-[24px] px-[35px] rounded-[25px]",
 }

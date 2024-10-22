@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       maxWidth: {
         "header-container": "1529px",
+        container: "1819px",
       },
       gridTemplateColumns: {
         header: "36% 64%",
@@ -19,6 +20,7 @@ const config: Config = {
         white: "#F0F0F0",
         yellow: "#F2994A",
         cyan: "#2CD7FF",
+        grey: "#727272",
       },
       fontFamily: {
         main: "var(--font-main)",
