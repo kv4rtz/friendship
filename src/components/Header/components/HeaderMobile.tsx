@@ -13,7 +13,7 @@ export const HeaderMobile = () => {
   return (
     <header
       className={clsx(
-        "fixed z-50 w-[calc(100%_-_20px)] left-[10px] top-[34px] max-[1140px]:block hidden bg-primary rounded-[25px] py-[9px] pr-[14px] pl-[24px] transition-all",
+        "fixed z-50 w-[calc(100vw_-_20px)] left-[10px] top-[34px] max-[1140px]:block hidden bg-primary rounded-[25px] py-[9px] pr-[14px] pl-[24px] transition-all",
         isOpen ? "h-[400px]" : "h-[56px] overflow-hidden"
       )}
     >
