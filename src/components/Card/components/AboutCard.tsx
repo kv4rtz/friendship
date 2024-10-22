@@ -36,7 +36,7 @@ export const AboutCard = ({ data }: IAboutCardProps) => {
         style={{ maxWidth: textWidth }}
         className={clsx(
           "font-medium text-[20px]  max-[600px]:text-[14px] max-[600px]:leading-[18.34px] leading-[26.2px] z-10",
-          type !== "default" ? "text-white" : "text-primary"
+          type !== "default" ? "text-white" : "text-black"
         )}
       >
         {text}

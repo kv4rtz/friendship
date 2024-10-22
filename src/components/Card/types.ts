@@ -17,5 +17,12 @@ export interface IAboutCard {
   image: ReactNode
 }
 
+export interface IContentCard {
+  color: "primary" | "gray" | "cyan" | "yellow" | "white"
+  image?: string
+  title: string
+  text: string
+}
+
 export type TCardsVariants = "main" | "about"
 export type TMainCardActions = "application" | "detailed"
