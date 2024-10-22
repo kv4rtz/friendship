@@ -23,8 +23,11 @@ export const AboutCard = ({ data }: IAboutCardProps) => {
     >
       <h3
         className={clsx(
-          "font-headline max-[600px]:text-[30px] max-[600px]:leading-[32.65px] text-[48px] leading-[52.24px]",
-          type !== "default" ? "text-white" : "text-primary"
+          "font-headline max-[600px]:leading-[32.65px] leading-[52.24px]",
+          type !== "default" ? "text-white" : "text-primary",
+          title === "40 лет" || title === "90 %"
+            ? "text-[96px] max-[600px]:text-[72px]"
+            : "text-[48px] max-[600px]:text-[30px]"
         )}
       >
         {title}
