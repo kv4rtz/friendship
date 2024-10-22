@@ -1,19 +1,20 @@
 import { Button } from "@/components/common"
 import Image from "next/image"
-import { ILargeCard, TLargeCardActions } from "../types"
+import { IMainCard, TMainCardActions } from "../types"
 
-interface ILargeCardProps {
-  onAction?: (action: TLargeCardActions) => void
-  data: ILargeCard
+export interface IMainCardProps {
+  variant?: "main"
+  onAction?: (action: TMainCardActions) => void
+  data: IMainCard
 }
 
-export const LargeCard = ({ data }: ILargeCardProps) => {
+export const MainCard = ({ data }: IMainCardProps) => {
   const { title, subtitle, description, text, image } = data
 
   return (
     <div>
-      <article className="flex justify-between gap-[15px] items-center pl-[70px] max-[1440px]:pl-[16px] p-[16px] bg-white border border-[#BFBFBF] rounded-[32px]">
-        <div>
+      <article className="flex justify-between gap-[15px] items-center pl-[70px] max-[1440px]:pl-[16px] p-[16px] bg-white border border-card rounded-[32px]">
+        <div className="max-[820px]:flex-1">
           <h3 className="text-[48px] max-[1820px]:text-[32px] max-[1820px]:leading-[34.83px] font-headline text-primary leading-[52.24px] max-w-[543px]">
             {subtitle}
           </h3>

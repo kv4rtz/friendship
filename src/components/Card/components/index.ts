@@ -1,1 +1,2 @@
-export * from "./LargeCard"
+export * from "./AboutCard"
+export * from "./MainCard"

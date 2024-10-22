@@ -1,4 +1,6 @@
-export interface ILargeCard {
+import { ReactNode } from "react"
+
+export interface IMainCard {
   subtitle: string
   title: string
   description: string
@@ -6,5 +8,14 @@ export interface ILargeCard {
   image: string
 }
 
-export type TCardsVariants = "large" | "small"
-export type TLargeCardActions = "application" | "detailed"
+export interface IAboutCard {
+  title: ReactNode
+  text: string
+  width: string
+  type: "default" | "primary" | "yellow"
+  textWidth: string
+  image: ReactNode
+}
+
+export type TCardsVariants = "main" | "about"
+export type TMainCardActions = "application" | "detailed"
