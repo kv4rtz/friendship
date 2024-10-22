@@ -1,4 +1,4 @@
-import { Header } from "@/components/Header/Header"
+import { Header } from "@/components"
 import { manropeFont, nauruzRedKedsFont, ralewayFont } from "@/fonts"
 import clsx from "clsx"
 import type { Metadata } from "next"

@@ -1,5 +1,7 @@
+import { MainView } from "@/components"
+
 const Home = () => {
-  return <div>test</div>
+  return <MainView />
 }
 
 export default Home

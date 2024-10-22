@@ -8,8 +8,8 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const designCn = {
-  default: "font-semibold font-main w-full",
-  rounded: "py-[7px] px-[25px] font-bold rounded-full",
+  default: "font-semibold font-main w-full text-nowrap",
+  rounded: "py-[7px] px-[25px] font-bold rounded-full text-nowrap",
 }
 
 const severityCn = {

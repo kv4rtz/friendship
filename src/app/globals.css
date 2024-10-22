@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 1140px) {
-  body {
-    @apply mt-[90px];
+body {
+  padding-top: 181px;
+  overflow-x: hidden;
+  @media (max-width: 1140px) {
+    padding-top: 116px;
   }
 }

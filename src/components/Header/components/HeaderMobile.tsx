@@ -13,22 +13,23 @@ export const HeaderMobile = () => {
   return (
     <header
       className={clsx(
-        "absolute w-[calc(100%_-_20px)] left-[10px] top-[34px] max-[1140px]:block hidden bg-primary rounded-[25px] py-[9px] pr-[14px] pl-[24px] transition-all",
+        "fixed z-50 w-[calc(100%_-_20px)] left-[10px] top-[34px] max-[1140px]:block hidden bg-primary rounded-[25px] py-[9px] pr-[14px] pl-[24px] transition-all",
         isOpen ? "h-[400px]" : "h-[56px] overflow-hidden"
       )}
     >
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <Image src="/logo-white.svg" alt="logo" width={76} height={33} />
         <div className="space-x-[6px]">
           <Button
             onClick={() => setIsOpen((prev) => !prev)}
             design="rounded"
             severity="white"
+            className="text-[12px]"
           >
             Меню
           </Button>
           <Button
-            className="max-[450px]:hidden"
+            className="max-[385px]:hidden text-[12px]"
             design="rounded"
             severity="yellow"
           >
