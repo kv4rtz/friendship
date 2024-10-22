@@ -11,10 +11,14 @@ const config: Config = {
       maxWidth: {
         "header-container": "1529px",
       },
+      gridTemplateColumns: {
+        header: "36% 64%",
+      },
       colors: {
         primary: "#8100FF",
         white: "#F0F0F0",
         yellow: "#F2994A",
+        cyan: "#2CD7FF",
       },
       fontFamily: {
         main: "var(--font-main)",

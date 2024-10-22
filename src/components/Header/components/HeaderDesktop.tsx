@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "../common"
-import links from "./header.links"
+import { Button } from "../../common"
+import links from "../header.links"
 
 export const HeaderDesktop = () => {
   return (

@@ -1,5 +1,4 @@
-import { HeaderDesktop } from "./HeaderDesktop"
-import { HeaderMobile } from "./HeaderMobile"
+import { HeaderDesktop, HeaderMobile } from "./components"
 
 export const Header = () => {
   return (
