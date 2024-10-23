@@ -10,7 +10,7 @@ import { ShiftsTabs, TTabVariants } from "../ShiftsTabs"
 import { SwiperArrow } from "../icons"
 
 export const ShiftsBlock = () => {
-  const [currentTab, setCurrentTab] = useState<TTabVariants>()
+  const [, setCurrentTab] = useState<TTabVariants>()
 
   return (
     <section className="mx-auto max-w-container">
