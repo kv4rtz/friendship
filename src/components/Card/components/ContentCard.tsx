@@ -12,7 +12,7 @@ export const ContentCard = ({ data }: IContentCardProps) => {
   return (
     <article
       className={clsx(
-        "min-h-[316px] max-[888px]:min-h-[200px] flex-1",
+        "min-h-[316px] max-[768px]:min-h-[200px] flex-1",
         {
           "py-[42px] px-[39px] flex flex-col justify-between rounded-[32px]":
             !data.image,
@@ -28,10 +28,10 @@ export const ContentCard = ({ data }: IContentCardProps) => {
     >
       {!data.image && (
         <>
-          <h3 className="leading-[30px] text-[28px] max-[888px]:text-[16px] max-[888px]:leading-[17px] font-bold uppercase">
+          <h3 className="leading-[30px] text-[28px] max-[768px]:text-[16px] max-[768px]:leading-[17px] font-bold uppercase">
             {title}
           </h3>
-          <p className="leading-[26.2px] text-[20px] max-[888px]:text-[14px] max-[888px]:leading-[18.34px]">
+          <p className="leading-[26.2px] text-[20px] max-[768px]:text-[14px] max-[768px]:leading-[18.34px]">
             {text}
           </p>
         </>

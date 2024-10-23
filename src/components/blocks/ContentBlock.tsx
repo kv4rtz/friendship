@@ -1,12 +1,11 @@
 import Image from "next/image"
+import { BlockTitle } from "../BlockTitle"
 import { Card } from "../Card"
 
 export const ContentBlock = () => {
   return (
     <section className="max-w-container mx-auto">
-      <h2 className="font-headline text-[96px] mt-[210px] mb-[50px] text-primary text-center max-[1000px]:text-[32px] max-[1000px]:mt-[70px] max-[1000px]:mb-[30px]">
-        Что входит в стоимость
-      </h2>
+      <BlockTitle>Что входит в стоимость</BlockTitle>
       <div className="flex gap-[20px] flex-wrap items-stretch content-stretch">
         <Card
           variant="content"

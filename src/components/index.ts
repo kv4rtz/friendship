@@ -1,3 +1,5 @@
+export * from "./BlockTitle"
 export * from "./Card"
 export * from "./Header"
 export * from "./MainView"
+export * from "./ShiftsTabs"

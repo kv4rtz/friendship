@@ -23,11 +23,11 @@ export const AboutCard = ({ data }: IAboutCardProps) => {
     >
       <h3
         className={clsx(
-          "font-headline max-[600px]:leading-[32.65px] leading-[52.24px]",
+          "font-headline max-[768px]:leading-[32.65px] leading-[52.24px]",
           type !== "default" ? "text-white" : "text-primary",
           title === "40 лет" || title === "90 %"
-            ? "text-[96px] max-[600px]:text-[72px]"
-            : "text-[48px] max-[600px]:text-[30px]"
+            ? "text-[96px] max-[768px]:text-[72px]"
+            : "text-[48px] max-[768px]:text-[30px]"
         )}
       >
         {title}
@@ -35,7 +35,7 @@ export const AboutCard = ({ data }: IAboutCardProps) => {
       <p
         style={{ maxWidth: textWidth }}
         className={clsx(
-          "font-medium text-[20px]  max-[600px]:text-[14px] max-[600px]:leading-[18.34px] leading-[26.2px] z-10",
+          "font-medium text-[20px]  max-[768px]:text-[14px] max-[768px]:leading-[18.34px] leading-[26.2px] z-10",
           type !== "default" ? "text-white" : "text-black"
         )}
       >

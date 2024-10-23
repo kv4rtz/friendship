@@ -9,3 +9,15 @@ body {
     padding-top: 116px;
   }
 }
+
+.max-w-container {
+  @media (max-width: 1819px) {
+    padding: 0 32px;
+  }
+}
+
+.swiper-button-disabled {
+  svg {
+    fill: #d9d9d9;
+  }
+}

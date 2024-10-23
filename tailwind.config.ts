@@ -22,6 +22,7 @@ const config: Config = {
         cyan: "#2CD7FF",
         grey: "#727272",
         cardGrey: "#3F3F3F",
+        textGray: "#CBCBCB",
         card: "#BFBFBF",
       },
       fontFamily: {

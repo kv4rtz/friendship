@@ -1,4 +1,5 @@
 import { Button } from "@/components/common"
+import { formatPrice } from "@/utils"
 import Image from "next/image"
 import { IShiftCard, TMainCardActions } from "../types"
 
@@ -28,20 +29,20 @@ export const ShiftCard = ({ data }: IShiftCardProps) => {
           {data.description}
         </p>
         <div className="mt-[36px] max-[790px]:mt-[21px]">
-          <div className="flex items-center gap-[20px]">
+          <div className="flex items-center gap-[20px] max-[790px]:gap-[7px]">
             <b className="text-[40px] font-semibold leading-[52.4px] line-through max-[790px]:text-[24px] max-[790px]:leading-[31.44px]">
-              {data.price}
+              {formatPrice(data.price)}
             </b>
             <Button
               design="rounded"
               severity="cyan"
-              className="max-[790px]:text-[10px] "
+              className="max-[790px]:text-[10px]"
             >
               Пройди игру и получи скидку!
             </Button>
           </div>
           <b className="font-bold text-[96px] leading-[115.2px] max-[790px]:text-[40px] max-[790px]:leading-[48px]">
-            {data.priceWithDiscount}
+            {formatPrice(data.priceWithDiscount)}
           </b>
         </div>
         <div className="flex gap-[28px] mt-[51px] max-[790px]:mt-[19px] max-[790px]:flex-col max-[790px]:gap-[10px]">

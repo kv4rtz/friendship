@@ -8,8 +8,8 @@ const Home = () => {
       <MainView />
       <MainCardBlock />
       <AboutUsBlock />
-      <ContentBlock />
       <ShiftsBlock />
+      <ContentBlock />
     </>
   )
 }
