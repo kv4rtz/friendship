@@ -1,5 +1,5 @@
 import { MainView } from "@/components"
-import { AboutUsBlock, MainCardBlock } from "@/components/blocks"
+import { AboutUsBlock, MainCardBlock, ShiftsBlock } from "@/components/blocks"
 import { ContentBlock } from "@/components/blocks/ContentBlock"
 
 const Home = () => {
@@ -9,6 +9,7 @@ const Home = () => {
       <MainCardBlock />
       <AboutUsBlock />
       <ContentBlock />
+      <ShiftsBlock />
     </>
   )
 }

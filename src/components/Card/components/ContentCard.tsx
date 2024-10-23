@@ -12,7 +12,7 @@ export const ContentCard = ({ data }: IContentCardProps) => {
   return (
     <article
       className={clsx(
-        "min-h-[316px] max-[600px]:min-h-[200px] flex-1",
+        "min-h-[316px] max-[888px]:min-h-[200px] flex-1",
         {
           "py-[42px] px-[39px] flex flex-col justify-between rounded-[32px]":
             !data.image,

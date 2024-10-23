@@ -25,5 +25,15 @@ export interface IContentCard {
   text?: string
 }
 
+export interface IShiftCard {
+  shift: string
+  date: string
+  title: string
+  description: string
+  price: number
+  priceWithDiscount: number
+  image: string
+}
+
 export type TCardsVariants = "main" | "about"
 export type TMainCardActions = "application" | "detailed"

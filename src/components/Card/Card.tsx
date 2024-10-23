@@ -4,11 +4,17 @@ import {
   IAboutCardProps,
   IContentCardProps,
   IMainCardProps,
+  IShiftCardProps,
   MainCard,
+  ShiftCard,
 } from "./components"
-import { IAboutCard, IContentCard, IMainCard } from "./types"
+import { IAboutCard, IContentCard, IMainCard, IShiftCard } from "./types"
 
-type ICardProps = IAboutCardProps | IMainCardProps | IContentCardProps
+type ICardProps =
+  | IAboutCardProps
+  | IMainCardProps
+  | IContentCardProps
+  | IShiftCardProps
 
 export const Card = ({ variant = "main", data }: ICardProps) => {
   if (variant === "main") {
@@ -17,5 +23,7 @@ export const Card = ({ variant = "main", data }: ICardProps) => {
     return <AboutCard data={data as IAboutCard} />
   } else if (variant === "content") {
     return <ContentCard data={data as IContentCard} />
+  } else if (variant === "shift") {
+    return <ShiftCard data={data as IShiftCard} />
   }
 }
