@@ -9,6 +9,7 @@ export interface IMainCard {
 }
 
 export interface IAboutCard {
+  animateDelay: number
   title: ReactNode
   text: string
   width: string

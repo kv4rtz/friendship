@@ -10,6 +10,7 @@ export const AboutUsBlock = () => {
         <Card
           variant="about"
           data={{
+            animateDelay: 1,
             type: "default",
             width: "593px",
             textWidth: "376px",
@@ -34,6 +35,7 @@ export const AboutUsBlock = () => {
         <Card
           variant="about"
           data={{
+            animateDelay: 2,
             width: "593px",
             textWidth: "315px",
             type: "primary",
@@ -58,6 +60,7 @@ export const AboutUsBlock = () => {
         <Card
           variant="about"
           data={{
+            animateDelay: 3,
             width: "593px",
             textWidth: "329px",
             type: "default",
@@ -82,6 +85,7 @@ export const AboutUsBlock = () => {
         <Card
           variant="about"
           data={{
+            animateDelay: 4,
             width: "950px",
             textWidth: "536px",
             type: "default",
@@ -98,6 +102,7 @@ export const AboutUsBlock = () => {
         <Card
           variant="about"
           data={{
+            animateDelay: 5,
             width: "494px",
             textWidth: "207px",
             type: "default",
@@ -117,6 +122,7 @@ export const AboutUsBlock = () => {
         <Card
           variant="about"
           data={{
+            animateDelay: 6,
             width: "331px",
             textWidth: "261px",
             type: "yellow",
