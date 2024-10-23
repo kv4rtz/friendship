@@ -17,6 +17,12 @@ export interface IAboutCard {
   image: ReactNode
 }
 
+export interface IReviewCard {
+  text: string
+  name: string
+  status: string
+  image: string
+}
 export interface IContentCard {
   color?: "primary" | "gray" | "cyan" | "yellow" | "white"
   className?: string
