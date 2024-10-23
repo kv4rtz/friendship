@@ -55,14 +55,14 @@ export const ShiftsTabs = ({ onChange }: IShiftsTabsProps) => {
   }
 
   return (
-    <ul className="flex justify-center gap-[50px] text-[24px] leading-[28.18px] font-bold text-textGray">
+    <ul className="flex justify-center max-[887px]:gap-[13px] max-[887px]:text-[16px] max-[768px]:text-[12px] gap-[50px] text-[24px] leading-[28.18px] font-bold text-textGray">
       {tabs.map((item) => (
         <motion.button
           key={item.type}
           className={clsx(
             tab === item.type
-              ? "text-[48px] leading-[56.35px] text-black"
-              : "mt-[14px]"
+              ? "text-[48px] max-[768px]:text-[16px] max-[887px]:text-[24px] leading-[56.35px] text-black"
+              : "mt-[14px] max-[768px]:mt-[3px] max-[887px]:mt-[px]"
           )}
           layout
           transition={{ type: "spring", stiffness: 900, damping: 40 }}
