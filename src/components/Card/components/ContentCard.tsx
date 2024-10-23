@@ -12,20 +12,31 @@ export const ContentCard = ({ data }: IContentCardProps) => {
   return (
     <article
       className={clsx(
-        "min-h-[316px] py-[42px] px-[39px] flex flex-col justify-between rounded-[32px]",
+        "min-h-[316px] max-[600px]:min-h-[200px] flex-1",
         {
-          "bg-primary text-white": color === "primary",
-          "bg-cardGrey text-white": color === "gray",
-          "bg-cyan text-white": color === "cyan",
-          "bg-yellow text-white": color === "yellow",
-          "bg-white text-black": color === "white",
-        }
+          "py-[42px] px-[39px] flex flex-col justify-between rounded-[32px]":
+            !data.image,
+          "bg-primary text-white": color === "primary" && !data.image,
+          "bg-cardGrey text-white": color === "gray" && !data.image,
+          "bg-cyan text-white": color === "cyan" && !data.image,
+          "bg-yellow text-white": color === "yellow" && !data.image,
+          "bg-white border border-card text-black":
+            color === "white" && !data.image,
+        },
+        data.className
       )}
     >
-      <h3 className="leading-[30px] text-[28px] font-bold uppercase">
-        {title}
-      </h3>
-      <p className="leading-[26.2px] text-[20px]">{text}</p>
+      {!data.image && (
+        <>
+          <h3 className="leading-[30px] text-[28px] max-[888px]:text-[16px] max-[888px]:leading-[17px] font-bold uppercase">
+            {title}
+          </h3>
+          <p className="leading-[26.2px] text-[20px] max-[888px]:text-[14px] max-[888px]:leading-[18.34px]">
+            {text}
+          </p>
+        </>
+      )}
+      {data.image}
     </article>
   )
 }

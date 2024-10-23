@@ -18,10 +18,11 @@ export interface IAboutCard {
 }
 
 export interface IContentCard {
-  color: "primary" | "gray" | "cyan" | "yellow" | "white"
-  image?: string
-  title: string
-  text: string
+  color?: "primary" | "gray" | "cyan" | "yellow" | "white"
+  className?: string
+  image?: ReactNode
+  title?: string
+  text?: string
 }
 
 export type TCardsVariants = "main" | "about"

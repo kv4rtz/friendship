@@ -1,5 +1,6 @@
-import { Card, MainView } from "@/components"
+import { MainView } from "@/components"
 import { AboutUsBlock, MainCardBlock } from "@/components/blocks"
+import { ContentBlock } from "@/components/blocks/ContentBlock"
 
 const Home = () => {
   return (
@@ -7,14 +8,7 @@ const Home = () => {
       <MainView />
       <MainCardBlock />
       <AboutUsBlock />
-      <Card
-        variant="content"
-        data={{
-          title: "Круглосуточная охрана территории и обеспечение безопасности",
-          text: "Камеры на территории, профессиональные охранники и всё нужное для безопасности детей",
-          color: "primary",
-        }}
-      />
+      <ContentBlock />
     </>
   )
 }
