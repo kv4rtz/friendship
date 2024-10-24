@@ -8,7 +8,7 @@ import { Quotes, SwiperArrow } from "../icons"
 
 export const ReviewsBlock = () => {
   return (
-    <section className="relative max-w-container mx-auto">
+    <section className="relative max-w-container mx-auto min-[1176px]:mb-[430px]">
       <BlockTitle>Отзывы</BlockTitle>
       <Quotes className="absolute max-[1176px]:hidden top-0 left-[42px] rotate-180 max-[1669px]:w-[250px]" />
       <Quotes className="absolute max-[1176px]:hidden -bottom-[202px] right-[42px] max-[1669px]:w-[250px] max-[1496px]:-bottom-[220px]" />

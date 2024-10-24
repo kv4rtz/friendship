@@ -1,4 +1,5 @@
 export * from "./AboutUsBlock"
+export * from "./FeedbackFormBlock"
 export * from "./FriendshipBlock"
 export * from "./MainCardBlock"
 export * from "./ReviewsBlock"

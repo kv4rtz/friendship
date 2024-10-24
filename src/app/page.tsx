@@ -1,6 +1,7 @@
 import { MainView } from "@/components"
 import {
   AboutUsBlock,
+  FeedbackFormBlock,
   FriendShipBlock,
   MainCardBlock,
   ReviewsBlock,
@@ -18,6 +19,7 @@ const Home = () => {
       <ContentBlock />
       <FriendShipBlock />
       <ReviewsBlock />
+      <FeedbackFormBlock />
     </>
   )
 }
