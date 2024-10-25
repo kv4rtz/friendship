@@ -13,7 +13,7 @@ export const MainCard = ({ data }: IMainCardProps) => {
 
   return (
     <div>
-      <article className="flex justify-between gap-[15px] items-stretch pl-[70px] max-[1440px]:pl-[16px] p-[16px] bg-white border border-card rounded-[32px]">
+      <article className="flex max-[1440px]:block justify-between gap-[15px] items-stretch pl-[70px] max-[1440px]:pl-[16px] p-[16px] bg-white border border-card rounded-[32px]">
         <div className="max-[820px]:flex-1">
           <h3 className="text-[48px] max-[768px]:text-[32px] max-[768px]:leading-[34.83px] font-headline text-primary leading-[52.24px] max-w-[543px] max-[375px]:text-[24px]">
             {subtitle}
@@ -47,7 +47,7 @@ export const MainCard = ({ data }: IMainCardProps) => {
           <p className="text-[24px] max-[768px]:text-[14px] max-[768px]:mt-[40px] max-[768px]:leading-[18.34px] font-medium leading-[31.44px] mt-[90px] max-w-[648px]">
             {text}
           </p>
-          <div className="flex gap-[28px] max-[820px]:flex-col max-[768px]:gap-[10px] mt-[51px] max-[768px]:mt-[21px]">
+          <div className="flex gap-[28px] max-[1440px]:flex-col max-[1440px]:gap-[10px] mt-[51px] max-[768px]:mt-[21px]">
             <Button className="max-[768px]:text-[16px] max-[768px]:py-[13px] max-[768px]:px-[30px] max-[768px]:rounded-[12px] min-w-[100px]">
               Оставить заявку
             </Button>
