@@ -2,9 +2,13 @@ import { Header } from "@/components"
 import { Footer } from "@/components/Footer"
 import { manropeFont, nauruzRedKedsFont, ralewayFont } from "@/fonts"
 import clsx from "clsx"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { PropsWithChildren } from "react"
 import "./globals.css"
+
+export const viewport: Viewport = {
+  minimumScale: 1,
+}
 
 export const metadata: Metadata = {
   title: "Дружба",
