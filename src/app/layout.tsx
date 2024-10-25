@@ -1,4 +1,5 @@
 import { Header } from "@/components"
+import { Footer } from "@/components/Footer"
 import { manropeFont, nauruzRedKedsFont, ralewayFont } from "@/fonts"
 import clsx from "clsx"
 import type { Metadata } from "next"
@@ -22,7 +23,8 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         )}
       >
         <Header />
-        {children}
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
