@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import { Button } from "../../common"
-import links from "../header.links"
+import { links } from "../header.links"
 
 export const HeaderMobile = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -28,13 +28,15 @@ export const HeaderMobile = () => {
           >
             Меню
           </Button>
-          <Button
-            className="max-[385px]:hidden text-[12px]"
-            design="rounded"
-            severity="yellow"
-          >
-            Оформить путевку
-          </Button>
+          <Link href="#buy">
+            <Button
+              className="max-[385px]:hidden text-[12px]"
+              design="rounded"
+              severity="yellow"
+            >
+              Оформить путевку
+            </Button>
+          </Link>
         </div>
       </div>
 

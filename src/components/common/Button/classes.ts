@@ -15,5 +15,5 @@ export const severityCn = {
 export const sizeCn = {
   small: "text-[16px] py-[13px] px-[30px] rounded-[12px]",
   default:
-    "text-[24px] min-[410px]:min-w-full py-[24px] px-[35px] rounded-[25px]",
+    "text-[24px] max-[410px]:min-w-full py-[24px] px-[35px] rounded-[25px]",
 }

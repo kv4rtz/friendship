@@ -4,7 +4,7 @@ import { Button, Input } from "../common"
 
 export const FeedbackFormBlock = () => {
   return (
-    <section className="max-w-container mx-auto">
+    <section id="buy" className="max-w-container mx-auto">
       <BlockTitle>Оформить путевку</BlockTitle>
       <div className="relative rounded-[32px] bg-primary py-[65px] px-[70px] max-[768px]:px-[16px] max-[768px]:py-[16px] text-white">
         <form className="max-w-[680px] max-[1600px]:max-w-full">

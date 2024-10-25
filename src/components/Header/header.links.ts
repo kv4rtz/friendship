@@ -1,20 +1,18 @@
-const links = [
+export const links = [
   {
-    url: "/",
+    url: "#aboutus",
     text: "О нас",
   },
   {
-    url: "/",
+    url: "#shifts",
     text: "Смены",
   },
   {
-    url: "/",
+    url: "#parents",
     text: "Родителям",
   },
   {
-    url: "/",
+    url: "#contacts",
     text: "Контакты",
   },
 ]
-
-export default links

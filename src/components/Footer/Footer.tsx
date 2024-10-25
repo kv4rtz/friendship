@@ -1,9 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
+import { links } from "../Header"
 
 export const Footer = () => {
   return (
-    <footer className="py-[50px] bg-primary mt-[210px]">
+    <footer id="contacts" className="py-[50px] bg-primary mt-[210px]">
       <div className="max-w-container mx-auto flex max-[1620px]:flex-col justify-between gap-[100px]">
         <div className="flex max-[900px]:flex-col justify-between flex-1 text-white font-manrope gap-[20px]">
           <Image src="/logo-white.svg" alt="logo" width="161" height="71" />
@@ -12,18 +13,11 @@ export const Footer = () => {
               Навигация
             </h4>
             <ul className="mt-[20px] space-y-[10px] leading-[21.86px]">
-              <li>
-                <Link href="/">О нас</Link>
-              </li>
-              <li>
-                <Link href="/">Смены</Link>
-              </li>
-              <li>
-                <Link href="/">Родителям</Link>
-              </li>
-              <li>
-                <Link href="/">Контакты</Link>
-              </li>
+              {links.map((link, idx) => (
+                <li key={idx}>
+                  <Link href={link.url}>{link.text}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="max-w-[210px]">

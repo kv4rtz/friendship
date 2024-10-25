@@ -4,7 +4,7 @@ import { Card } from "../Card"
 
 export const ContentBlock = () => {
   return (
-    <section className="max-w-container mx-auto">
+    <section id="parents" className="max-w-container mx-auto">
       <BlockTitle>Что входит в стоимость</BlockTitle>
       <div className="flex gap-[20px] flex-wrap items-stretch content-stretch">
         <Card

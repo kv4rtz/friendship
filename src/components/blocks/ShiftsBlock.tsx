@@ -13,7 +13,7 @@ export const ShiftsBlock = () => {
   const [, setCurrentTab] = useState<TTabVariants>()
 
   return (
-    <section className="mx-auto max-w-container">
+    <section id="shifts" className="mx-auto max-w-container">
       <BlockTitle>Наши смены</BlockTitle>
       <ShiftsTabs onChange={(t) => setCurrentTab(t)} />
       <div className="mt-[50px] flex gap-[33px] items-center">
