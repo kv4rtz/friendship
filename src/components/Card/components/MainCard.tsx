@@ -1,5 +1,4 @@
 import { Button } from "@/components/common"
-import * as motion from "framer-motion/client"
 import Image from "next/image"
 import { IMainCard, TMainCardActions } from "../types"
 
@@ -20,7 +19,7 @@ export const MainCard = ({ data }: IMainCardProps) => {
             {subtitle}
           </h3>
           <h2 className="text-[128px] max-[768px]:text-[52px] max-[768px]:mt-[21px] max-[768px]:leading-[52px] font-bold leading-[120px] mt-[50px] max-w-[711px]">
-            {title.split("").map((item, idx) => {
+            {/* {title.split("").map((item, idx) => {
               return (
                 <motion.span
                   className="inline-block"
@@ -39,7 +38,8 @@ export const MainCard = ({ data }: IMainCardProps) => {
                   {item === " " ? <>&nbsp;</> : item}
                 </motion.span>
               )
-            })}
+            })} */}
+            {title}
           </h2>
           <div className="text-[24px] max-[768px]:text-[14px] max-[768px]:mt-[21px] text-grey font-semibold mt-[34px]">
             {description}

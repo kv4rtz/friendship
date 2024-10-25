@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+body {
   padding-top: 181px;
-  overflow-x: hidden;
   @media (max-width: 1140px) {
     padding-top: 116px;
   }
