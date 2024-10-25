@@ -15,10 +15,10 @@ export const MainCard = ({ data }: IMainCardProps) => {
     <div>
       <article className="flex justify-between gap-[15px] items-stretch pl-[70px] max-[1440px]:pl-[16px] p-[16px] bg-white border border-card rounded-[32px]">
         <div className="max-[820px]:flex-1">
-          <h3 className="text-[48px] max-[768px]:text-[32px] max-[768px]:leading-[34.83px] font-headline text-primary leading-[52.24px] max-w-[543px]">
+          <h3 className="text-[48px] max-[768px]:text-[32px] max-[768px]:leading-[34.83px] font-headline text-primary leading-[52.24px] max-w-[543px] max-[375px]:text-[24px]">
             {subtitle}
           </h3>
-          <h2 className="text-[128px] max-[768px]:text-[52px] max-[768px]:mt-[21px] max-[768px]:leading-[52px] font-bold leading-[120px] mt-[50px] max-w-[711px]">
+          <h2 className="text-[128px] max-[768px]:text-[52px] max-[375px]:text-[44px] max-[768px]:mt-[21px] max-[768px]:leading-[52px] font-bold leading-[120px] mt-[50px] max-w-[711px]">
             {/* {title.split("").map((item, idx) => {
               return (
                 <motion.span
