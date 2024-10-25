@@ -1,5 +1,6 @@
 "use client"
 
+import { shifts } from "@/data"
 import { useState } from "react"
 import "swiper/css"
 import { Navigation } from "swiper/modules"
@@ -10,7 +11,7 @@ import { ShiftsTabs, TTabVariants } from "../ShiftsTabs"
 import { SwiperArrow } from "../icons"
 
 export const ShiftsBlock = () => {
-  const [, setCurrentTab] = useState<TTabVariants>()
+  const [currentTab, setCurrentTab] = useState<TTabVariants>()
 
   return (
     <section id="shifts" className="mx-auto max-w-container">
@@ -26,36 +27,22 @@ export const ShiftsBlock = () => {
           className="w-full"
           slidesPerView={1}
         >
-          <SwiperSlide>
-            <Card
-              variant="shift"
-              data={{
-                date: "10 июня - 24 июня",
-                shift: "1 смена",
-                title: "Конно-туристичская",
-                description:
-                  "Конно — туристическая смена Создана для детей, которые любят лошадей и активный отдых, мечтают научиться ездить верхом или хотят совершенствовать уже имеющиеся навыки! Опыт верховой езды не обязателен",
-                image: "/images/large-card.png",
-                price: 41_290,
-                priceWithDiscount: 34_990,
-              }}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              variant="shift"
-              data={{
-                date: "10 июня - 24 июня",
-                shift: "2 смена",
-                title: "Конно-туристичская",
-                description:
-                  "Конно — туристическая смена Создана для детей, которые любят лошадей и активный отдых, мечтают научиться ездить верхом или хотят совершенствовать уже имеющиеся навыки! Опыт верховой езды не обязателен",
-                image: "/images/large-card.png",
-                price: 41_290,
-                priceWithDiscount: 34_990,
-              }}
-            />
-          </SwiperSlide>
+          {shifts[currentTab || "summer"].map((slide, idx) => (
+            <SwiperSlide key={idx}>
+              <Card
+                variant="shift"
+                data={{
+                  date: slide.date,
+                  shift: slide.shift,
+                  title: slide.title,
+                  description: slide.description,
+                  image: slide.image,
+                  price: slide.price,
+                  priceWithDiscount: slide.priceWithDiscount,
+                }}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
         <button className="max-[1024px]:hidden nextSlide">
           <SwiperArrow className="fill-black rotate-180 transition" />
