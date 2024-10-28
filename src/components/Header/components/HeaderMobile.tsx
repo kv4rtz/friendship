@@ -17,7 +17,7 @@ export const HeaderMobile = () => {
         isOpen ? "h-[400px]" : "h-[56px] overflow-hidden"
       )}
     >
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center h-[38px]">
         <Image src="/logo-white.svg" alt="logo" width={76} height={33} />
         <div className="space-x-[6px]">
           <Button
@@ -55,7 +55,7 @@ export const HeaderMobile = () => {
           ))}
           <Link className="col-span-2" href="/">
             <Button size="small" severity="cyan">
-              Политика конфиденциаьнсти
+              Политика конфиденциальности
             </Button>
           </Link>
         </div>
