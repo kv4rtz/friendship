@@ -1,4 +1,7 @@
+"use client"
+
 import clsx from "clsx"
+import { motion } from "framer-motion"
 import { IContentCard } from "../types"
 
 export interface IContentCardProps {
@@ -7,10 +10,26 @@ export interface IContentCardProps {
   onAction?: never
 }
 
+const animation = {
+  hidden: { opacity: 0, x: -100 },
+  visible: (c: number) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: c * 0.05,
+    },
+  }),
+}
+
 export const ContentCard = ({ data }: IContentCardProps) => {
   const { title, text, color } = data
   return (
-    <article
+    <motion.article
+      custom={1}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+      variants={animation}
       className={clsx(
         "min-h-[316px] gap-[10px] max-[768px]:min-h-[200px] flex-1",
         {
@@ -37,6 +56,6 @@ export const ContentCard = ({ data }: IContentCardProps) => {
         </>
       )}
       {data.image}
-    </article>
+    </motion.article>
   )
 }

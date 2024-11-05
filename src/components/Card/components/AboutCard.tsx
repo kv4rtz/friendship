@@ -31,6 +31,7 @@ export const AboutCard = ({ data }: IAboutCardProps) => {
       viewport={{ amount: 0.2, once: true }}
       variants={animation}
       style={{ minWidth: width }}
+      whileHover={{ scale: 1.025 }}
       className={clsx(
         `relative flex-1 max-[950px]:!min-w-full rounded-[32px] py-[42px] px-[35px] flex flex-col justify-between min-h-[402px] border border-card overflow-hidden`,
         {

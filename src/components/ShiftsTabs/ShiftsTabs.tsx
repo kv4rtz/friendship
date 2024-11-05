@@ -10,6 +10,17 @@ interface IShiftsTabsProps {
   onChange?: (value: TTabVariants) => void
 }
 
+const animation = {
+  hidden: { opacity: 0, y: 100 },
+  visible: (c: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: c * 0.05,
+    },
+  }),
+}
+
 export const ShiftsTabs = ({ onChange }: IShiftsTabsProps) => {
   const [tab, setTab] = useState<TTabVariants>("summer")
   const [tabs, setTabs] = useState<{ type: TTabVariants; text: string }[]>([
@@ -55,7 +66,14 @@ export const ShiftsTabs = ({ onChange }: IShiftsTabsProps) => {
   }
 
   return (
-    <ul className="flex justify-center max-[385px]:flex-col max-[385px]:gap-0 max-[887px]:gap-[13px] max-[887px]:text-[16px] max-[768px]:text-[12px] gap-[50px] text-[24px] leading-[28.18px] font-bold text-textGray">
+    <motion.ul
+      custom={1}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+      variants={animation}
+      className="flex justify-center max-[385px]:flex-col max-[385px]:gap-0 max-[887px]:gap-[13px] max-[887px]:text-[16px] max-[768px]:text-[12px] gap-[50px] text-[24px] leading-[28.18px] font-bold text-textGray"
+    >
       {tabs.map((item) => (
         <motion.button
           key={item.type}
@@ -70,6 +88,6 @@ export const ShiftsTabs = ({ onChange }: IShiftsTabsProps) => {
           <li onClick={() => handleTabClick(item.type)}>{item.text}</li>
         </motion.button>
       ))}
-    </ul>
+    </motion.ul>
   )
 }

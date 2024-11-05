@@ -47,6 +47,7 @@ const transition: AnimationProps["transition"] = {
   duration: 7,
   repeat: Infinity,
   repeatType: "loop",
+  ease: "easeInOut",
 }
 
 export const MainView = () => {

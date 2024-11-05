@@ -1,5 +1,7 @@
+"use client"
 import clsx from "clsx"
-import { ButtonHTMLAttributes } from "react"
+import { motion } from "framer-motion"
+import { ButtonHTMLAttributes, ForwardedRef, forwardRef } from "react"
 import { designCn, severityCn, sizeCn } from "./classes"
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -8,13 +10,16 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: "small" | "default"
 }
 
-export const Button = ({
-  design = "default",
-  severity = "primary",
-  size = "default",
-  children,
-  ...attrs
-}: IButtonProps) => {
+export const Btn = (
+  {
+    design = "default",
+    severity = "primary",
+    size = "default",
+    children,
+    ...attrs
+  }: IButtonProps,
+  ref: ForwardedRef<HTMLButtonElement>
+) => {
   return (
     <button
       {...attrs}
@@ -24,8 +29,13 @@ export const Button = ({
         design === "default" && sizeCn[size],
         attrs.className
       )}
+      ref={ref}
     >
       {children}
     </button>
   )
 }
+
+export const Button = forwardRef<HTMLButtonElement, IButtonProps>(Btn)
+
+export const MotionButton = motion.create(Button)

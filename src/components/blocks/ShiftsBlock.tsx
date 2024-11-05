@@ -1,6 +1,7 @@
 "use client"
 
 import { shifts } from "@/data"
+import { motion } from "framer-motion"
 import { useState } from "react"
 import "swiper/css"
 import { Navigation } from "swiper/modules"
@@ -10,6 +11,18 @@ import { Card } from "../Card"
 import { ShiftsTabs, TTabVariants } from "../ShiftsTabs"
 import { SwiperArrow } from "../icons"
 
+const animation = {
+  hidden: { opacity: 0, scale: 1.2, y: 100 },
+  visible: (c: number) => ({
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      delay: c * 0.05,
+    },
+  }),
+}
+
 export const ShiftsBlock = () => {
   const [currentTab, setCurrentTab] = useState<TTabVariants>()
 
@@ -17,7 +30,14 @@ export const ShiftsBlock = () => {
     <section id="shifts" className="mx-auto max-w-container">
       <BlockTitle>Наши смены</BlockTitle>
       <ShiftsTabs onChange={(t) => setCurrentTab(t)} />
-      <div className="mt-[50px] flex gap-[33px] items-center">
+      <motion.div
+        custom={1}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.2, once: true }}
+        variants={animation}
+        className="mt-[50px] flex gap-[33px] items-center"
+      >
         <button className="max-[1024px]:hidden prevSlide">
           <SwiperArrow className="fill-black transition" />
         </button>
@@ -47,7 +67,7 @@ export const ShiftsBlock = () => {
         <button className="max-[1024px]:hidden nextSlide">
           <SwiperArrow className="fill-black rotate-180 transition" />
         </button>
-      </div>
+      </motion.div>
     </section>
   )
 }
