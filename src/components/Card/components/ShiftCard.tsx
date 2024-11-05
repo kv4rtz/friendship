@@ -1,6 +1,7 @@
 import { Button } from "@/components/common"
 import { formatPrice } from "@/utils"
 import Image from "next/image"
+import Link from "next/link"
 import { IShiftCard, TMainCardActions } from "../types"
 
 export interface IShiftCardProps {
@@ -33,13 +34,15 @@ export const ShiftCard = ({ data }: IShiftCardProps) => {
             <b className="text-[40px] font-semibold leading-[52.4px] line-through max-[790px]:text-[24px] max-[790px]:leading-[31.44px]">
               {formatPrice(data.price)}
             </b>
-            <Button
-              design="rounded"
-              severity="cyan"
-              className="max-[790px]:text-[10px]"
-            >
-              Пройди игру и получи скидку!
-            </Button>
+            <Link href="/game">
+              <Button
+                design="rounded"
+                severity="cyan"
+                className="max-[790px]:text-[10px]"
+              >
+                Пройди игру и получи скидку!
+              </Button>
+            </Link>
           </div>
           <b className="font-bold text-[96px] leading-[115.2px] max-[790px]:text-[40px] max-[790px]:leading-[48px]">
             {formatPrice(data.priceWithDiscount)}
