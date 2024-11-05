@@ -23,7 +23,7 @@ export const FriendShipBlock = () => {
           repeatType: "loop",
           ease: "easeInOut",
         }}
-        className="absolute left-1/2 -translate-y-[65px] -translate-x-1/2 max-[768px]:max-w-[352px] max-[768px]:-translate-y-[35px]"
+        className="absolute left-1/2 -translate-y-[65px] -translate-x-1/2 max-[768px]:max-w-[352px] max-[920px]:top-[180px] max-[835px]:top-[240px] max-[739px]:top-[300px] max-[621px]:top-[320px] max-[555px]:top-[280px] max-[467px]:top-[200px] max-[415px]:top-[220px]"
         src="/images/friendship-large.png"
         alt="friendship"
         width="1036"
