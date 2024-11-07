@@ -78,7 +78,15 @@ export const ContentBlock = () => {
           variant="content"
           data={{
             className: "min-[900px]:min-w-[593px] min-w-[320px] min-h-[470px]",
-            title: "Более 30 увлекательных мероприятий за смену",
+            title: (
+              <>
+                Более{" "}
+                <span className="text-[36px] max-[768px]:text-[28px] text-yellow">
+                  30
+                </span>{" "}
+                увлекательных мероприятий за смену
+              </>
+            ),
             text: "Насыщенная программа с разнообразными спортивными соревнованиями, творческими мастер-классами и образовательными квестами",
             color: "white",
           }}

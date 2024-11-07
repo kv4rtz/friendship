@@ -28,7 +28,7 @@ export interface IContentCard {
   color?: "primary" | "gray" | "cyan" | "yellow" | "white"
   className?: string
   image?: ReactNode
-  title?: string
+  title?: ReactNode
   text?: string
 }
 

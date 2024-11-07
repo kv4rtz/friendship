@@ -53,10 +53,10 @@ const transition: AnimationProps["transition"] = {
 export const MainView = () => {
   return (
     <div>
-      <h1 className="text-[6.66vw] font-bold text-center min-[730px]:leading-[52px]">
-        Дружба
+      <h1 className="text-[5vw] font-bold text-yellow text-center font-headline min-[730px]:leading-[52px]">
+        Лагерь «дружба»
       </h1>
-      <h2 className="mt-[4.3vw] text-[12.2vw] leading-[10.5vw] text-primary font-bold font-headline text-center">
+      <h2 className="mt-[3vw] text-[12.2vw] leading-[10.5vw] text-primary font-bold font-headline text-center">
         и&nbsp;больше ничего не нужно!
       </h2>
       <div className="relative -translate-y-[5vw] w-[106vw] min-w-[862px] max-[862px]:absolute max-[862px]:left-1/2 max-[862px]:-translate-x-1/2">
