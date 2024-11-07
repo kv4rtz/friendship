@@ -52,7 +52,7 @@ const transition: AnimationProps["transition"] = {
 
 export const MainView = () => {
   return (
-    <div>
+    <div className="select-none">
       <h1 className="text-[5vw] font-bold text-yellow text-center font-headline min-[730px]:leading-[52px]">
         Лагерь «дружба»
       </h1>

@@ -4,7 +4,7 @@ import { Card } from "../Card"
 
 export const AboutUsBlock = () => {
   return (
-    <section id="aboutus" className="max-w-container mx-auto">
+    <section id="aboutus" className="max-w-container mx-auto select-none">
       <BlockTitle>О нас</BlockTitle>
       <div className="flex gap-[20px] flex-wrap">
         <Card

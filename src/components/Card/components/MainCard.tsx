@@ -99,7 +99,7 @@ export const MainCard = ({ data }: IMainCardProps) => {
           >
             {text}
           </motion.p>
-          <div className="flex gap-[28px] max-[1440px]:flex-col max-[1440px]:gap-[10px] mt-[51px] max-[768px]:mt-[21px]">
+          <div className="flex gap-[28px] max-[1440px]:flex-col mb-[18px] max-[1440px]:gap-[10px] mt-[51px] max-[768px]:mt-[21px]">
             <MotionButton
               custom={18}
               initial="hidden"
