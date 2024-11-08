@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer id="contacts" className="py-[50px] bg-primary mt-[210px]">
       <div className="max-w-container mx-auto flex max-[1620px]:flex-col justify-between gap-[100px]">
-        <div className="flex max-[900px]:flex-col justify-between flex-1 text-white font-manrope gap-[20px]">
+        <div className="flex max-[900px]:flex-col justify-between flex-1 text-white font-manrope font-light gap-[20px]">
           <Image src="/logo-white.svg" alt="logo" width="161" height="71" />
           <div className="max-w-[210px]">
             <h4 className="text-[24px] font-bold leading-[32.78px]">
@@ -52,7 +52,7 @@ export const Footer = () => {
                 <h5 className="font-bold text-[16px] leading-[21.86px]">
                   Офис
                 </h5>
-                <ul>
+                <ul className="space-y-[10px]">
                   <li>г. Ижевск ул. 1 Подлесная дом 1, офис 8</li>
                   <li>Пн-Пт 10-19, Сб-Вс-по договоренности</li>
                 </ul>
@@ -61,7 +61,7 @@ export const Footer = () => {
                 <h5 className="font-bold text-[16px] leading-[21.86px]">
                   Лагерь
                 </h5>
-                <ul>
+                <ul className="space-y-[10px]">
                   <li>г. Ижевск, 14 км. Якшур - Бодьинского тракта</li>
                 </ul>
               </li>
