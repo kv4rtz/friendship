@@ -19,7 +19,7 @@ export const ShiftCard = ({ data }: IShiftCardProps) => {
         </h4>
         <time
           dateTime={data.date}
-          className="text-[78px] font-semibold leading-[62.88px] max-[790px]:text-[20px] max-[790px]:leading-[20px]"
+          className="text-[48px] font-semibold leading-[62.88px] max-[790px]:text-[20px] max-[790px]:leading-[20px]"
         >
           {data.date}
         </time>

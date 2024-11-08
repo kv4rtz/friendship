@@ -65,7 +65,7 @@ export const MainCard = ({ data }: IMainCardProps) => {
             whileInView="visible"
             viewport={{ amount: 0.4, once: true }}
             variants={animationText}
-            className="text-[48px] max-[768px]:text-[32px] max-[768px]:leading-[34.83px] font-headline text-primary leading-[52.24px] max-w-[543px] max-[375px]:text-[24px]"
+            className="text-[48px] mt-[18px] max-[768px]:text-[32px] max-[768px]:leading-[34.83px] font-headline text-primary leading-[52.24px] max-w-[543px] max-[375px]:text-[24px]"
           >
             {subtitle}
           </motion.h3>
