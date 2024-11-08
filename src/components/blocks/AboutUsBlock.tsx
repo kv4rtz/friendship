@@ -66,7 +66,7 @@ export const AboutUsBlock = () => {
             type: "default",
             title: (
               <>
-                Вополти свои <br />
+                Воплоти свои <br />
                 фантазии
               </>
             ),
