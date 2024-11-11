@@ -28,13 +28,13 @@ export const UnityGame = () => {
       updateBannerVisibility()
     }
 
-    const buildUrl = "Build"
-    const loaderUrl = buildUrl + "/WithoutCompress.loader.js"
+    const buildUrl = "BuildV1.1.0"
+    const loaderUrl = buildUrl + ".loader.js"
     const config = {
       arguments: [],
-      dataUrl: buildUrl + "/WithoutCompress.data",
-      frameworkUrl: buildUrl + "/WithoutCompress.framework.js",
-      codeUrl: buildUrl + "/WithoutCompress.wasm",
+      dataUrl: buildUrl + ".data",
+      frameworkUrl: buildUrl + ".framework.js",
+      codeUrl: buildUrl + ".wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "FriendshipCamp",
