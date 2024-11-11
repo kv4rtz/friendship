@@ -7,6 +7,13 @@ import { useEffect } from "react"
 export const UnityGame = () => {
   useEffect(() => {
     const canvas = document.querySelector("#unity-canvas")
+
+    // Shows a temporary message banner/ribbon for a few seconds, or
+    // a permanent error message on top of the canvas if type=='error'.
+    // If type=='warning', a yellow highlight color is used.
+    // Modify or remove this function to customize the visually presented
+    // way that non-critical warnings and error messages are presented to the
+    // user.
     function unityShowBanner(msg, type) {
       const warningBanner = document.querySelector("#unity-warning")
       function updateBannerVisibility() {
@@ -28,17 +35,17 @@ export const UnityGame = () => {
       updateBannerVisibility()
     }
 
-    const buildUrl = "BuildV1.1.0"
-    const loaderUrl = buildUrl + ".loader.js"
+    const buildUrl = "Build"
+    const loaderUrl = buildUrl + "/BuildV1.1.0.loader.js"
     const config = {
       arguments: [],
-      dataUrl: buildUrl + ".data",
-      frameworkUrl: buildUrl + ".framework.js",
-      codeUrl: buildUrl + ".wasm",
+      dataUrl: buildUrl + "/BuildV1.1.0.data",
+      frameworkUrl: buildUrl + "/BuildV1.1.0.framework.js",
+      codeUrl: buildUrl + "/BuildV1.1.0.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
-      productName: "FriendshipCamp",
-      productVersion: "1.0.0",
+      productName: 'Лагерь "Дружба"',
+      productVersion: "1.1.0",
       showBanner: unityShowBanner,
     }
 
@@ -102,12 +109,12 @@ export const UnityGame = () => {
   }, [])
 
   return (
-    <div id="unity-container" className="unity-desktop">
+    <div id="unity-container" class="unity-desktop">
       <canvas
         id="unity-canvas"
         width="1280"
         height="720"
-        tabIndex={-1}
+        tabindex="-1"
       ></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -115,11 +122,11 @@ export const UnityGame = () => {
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div id="unity-warning"></div>
+      <div id="unity-warning"> </div>
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">FriendshipCamp</div>
+        <div id="unity-build-title">Лагерь Дружба</div>
       </div>
     </div>
   )
