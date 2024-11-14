@@ -37,7 +37,7 @@ export const ShiftCard = ({ data }: IShiftCardProps) => {
             <Link href="/game">
               <Button
                 design="rounded"
-                severity="cyan"
+                severity="primary"
                 className="max-[790px]:text-[10px]"
               >
                 Пройди игру и получи скидку!
