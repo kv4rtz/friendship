@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  scroll-margin-top: 100px;
+}
+
 body {
   padding-top: 181px;
   @media (max-width: 1140px) {
